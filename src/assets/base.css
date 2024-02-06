@@ -1,0 +1,74 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --spacing-related-items: 6px;
+  --spacing-indirectly-related-items: 12px;
+  --spacing-unrelated-items: 24px;
+
+  --line-height: 1.6;
+  --line-height-interactive: 1.4;
+
+  --white: white;
+  --black: black;
+  --grey: hsl(0, 0%, 15%);
+  --cyan: hsl(180deg, 100%, 50%);
+  --dark-cyan: hsl(180deg, 100%, 30%);
+  --red: hsl(0, 100%, 50%);
+  --blue: hsl(240deg, 100%, 46%);
+  --purple: hsl(270deg, 68%, 32%);
+
+  --font: system-ui, sans-serif;
+}
+
+:root {
+  --color-background: var(--white);
+
+  --color-heading: var(--black);
+  --color-text: var(--grey);
+
+  --color-card-border: var(--grey);
+  --color-controls-background: hsl(0, 0%, 100%, .65);
+  --color-separator: var(--grey);
+  --color-header-separator: var(--color-separator);
+  --color-footer-separator: var(--color-separator);
+  --color-upvote-active: var(--cyan);
+  --color-downvote-active: var(--red);
+  --color-links: var(--blue);
+  --color-links-visited: var(--purple);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--black);
+
+    --color-heading: var(--white);
+    --color-text: var(--white);
+
+    --color-card-border: var(--grey);
+    --color-controls-background: hsl(0, 0%, 0%, .65);
+    --color-separator: var(--white);
+    --color-header-separator: var(--color-separator);
+    --color-footer-separator: var(--color-separator);
+    --color-upvote-active: var(--cyan);
+    --color-downvote-active: var(--red);
+    --color-links: var(--cyan);
+    --color-links-visited: var(--dark-cyan);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: var(--line-height);
+  font-family: var(--font);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,25 @@
+.header {
+    border-bottom: 1px solid var(--color-header-separator);
+    margin-bottom: var(--spacing-unrelated-items);
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 15%;
+    padding-block: var(--spacing-related-items);
+}
+
+.liens-header {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-indirectly-related-items);
+    align-items: center;
+}
+.liens-header a {
+    text-decoration: none;
+}
+.logo {
+    height: 5rem;
+    fill: currentColor;
+    rotate: -10deg;
+}
